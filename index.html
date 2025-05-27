@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-<html lang="es"> <!-- El idioma estaba con "en" y lo cambie a "es"-->
+<html lang="es"> <!-- El idioma estaba con "en" y lo cambié a "es"-->
+<!-- Cambios realizados:
+     1. Idioma cambiado a español
+     2. Título más descriptivo
+     3. Estructura semántica mejorada
+     4. Ruta del script corregida (si usas app.js)
+-->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css">
-    <title>Buscador de Ususarios de Github</title> <!-- Quite APIs como titulo y puse uno más descriptivo-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tabla y Botón</title> <!-- Cambié el título por algo más claro -->
+  <link rel="stylesheet" href="assets/css/styles.css" /> <!-- Me asegure que la ruta es correcta -->
 </head>
 <body>
-  <div class="wrapper"> 
-    <h1>Información de Usuario GitHub</h1> <!--Agregue un encabezado-->
-    <!-- Quite <p class="name"></p> y <p class="blog"></p> --> 
-    <!-- En su lugar puse elementos para mostrar la información -->
-     
-     <p><strong>Nombre:</strong> <span class="name"></span></p>
-     <p><strong>Blog:</strong> <span class="blog"></span></p>
- </div>
-  <script src="assets/js/app.js"></script> <!-- Corregida la ruta del script (eliminé ../) -->
+  <!-- Tabla con información de ejemplo -->
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>blog</th>
+        <th>Ubicación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Scott Tolinski</strong></td>
+        <td><a href="https://tolin.ski/">https://tolin.ski/</a></td>
+        <td>Denver, CO</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Botón de prueba -->
+  <button>boton</button>
+
+  <!-- Como uso JS, activar esta línea: -->
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
